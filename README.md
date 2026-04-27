@@ -6,8 +6,6 @@
 
 ---
 
----
-
 ## .✦ ݁˖ Enfoque
 
 Este proyecto parte de algunas ideas clave del feminismo de datos:
