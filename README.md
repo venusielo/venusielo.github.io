@@ -10,7 +10,7 @@
 
 ## .✦ ݁˖ Enfoque
 
-Este proyecto parte de algunas ideas clave del feminismo de datos:
+Este proyecto parte de mi postura como una mujer feminista en computación:
 
 * los datos no son neutrales
 * los algoritmos reflejan decisiones humanas
