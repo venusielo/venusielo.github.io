@@ -23,11 +23,6 @@ Este proyecto parte de mi postura como una mujer feminista en computación:
 Este es un proyecto en desarrollo.
 Los contenidos pueden cambiar, expandirse o reescribirse con el tiempo ya que soy una persona en constante formación :3
 
----
-
-## ˙𐃷˙ Autora
-
-Ana Sofía Matti Ríos
 ```
 ⠀⠀⠀⢠⡾⠲⠶⣤⣀⣠⣤⣤⣤⡿⠛⠿⡴⠾⠛⢻⡆⠀⠀⠀
 ⠀⠀⠀⣼⠁⠀⠀⠀⠉⠁⠀⢀⣿⠐⡿⣿⠿⣶⣤⣤⣷⡀⠀⠀
