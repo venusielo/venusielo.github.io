@@ -113,10 +113,14 @@
             align-items: center;
             justify-content: center;
             gap: 10px; /* espacio entre alas y texto */
+            flex-wrap: nowrap; /* IMPORTANTE: evita que se bajen */
+
         }
 
         .ala {
-            width: 60px; /* ajusta tamaño */
+            width: 450px; /* ajusta tamaño */
+            height: auto;  /* mantiene proporción */
+            flex-shrink: 0; /* evita que se deformen */
         }
 
         h1 {
