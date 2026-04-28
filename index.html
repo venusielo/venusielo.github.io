@@ -99,10 +99,7 @@
             pointer-events: none;
         }
         */
-        .sparkle {
-            display: inline-block;
-            animation: brillo 1.5s infinite alternate;
-        }
+
         @keyframes brillo {
             from { transform: scale(1); opacity: 0.85; }
             to { transform: scale(1.1); opacity: 1; }
@@ -112,17 +109,25 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px; /* espacio entre alas y texto */
-            flex-wrap: nowrap; /* IMPORTANTE: evita que se bajen */
+            gap: 10px;
+            flex-wrap: nowrap;
+        }
 
+        /* animación aplicada a TODO el bloque */
+        .sparkle {
+            animation: brillo 1.5s infinite alternate;
+            display: inline-flex; /* importante para que no se rompa */
         }
 
         .ala {
-            width: 45px; /* ajusta tamaño */
+            width: 50px;
+            height: auto;
+            flex-shrink: 0;
         }
 
         h1 {
             margin: 0;
+            white-space: nowrap;
         }
     </style>
     
@@ -132,12 +137,10 @@
 
 <div class="container">
 
-    <div class="titulo">
-        <span class="sparkle">
-            <img src="imagenes/left_wing.gif" class="ala izquierda">
-            <h1>venus wiki ✧</h1>
-            <img src="imagenes/right_wing.gif" class="ala derecha">
-        </span>
+    <div class="titulo sparkle">
+        <img src="imagenes/left_wing.gif" class="ala izquierda">
+        <h1>venus wiki ✧</h1>
+        <img src="imagenes/right_wing.gif" class="ala derecha">
     </div>
     <!--<img src="/imagenes/cutegif(1).gif" class="gif-esquina"> -->
 
