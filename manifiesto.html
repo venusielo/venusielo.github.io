@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifiesto - Venus Wiki</title>
+    <style>
+        /* --- ESTILOS BASE DEL BLOG --- */
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-image: url("imagenes/background.gif"); 
+            background-attachment: fixed;
+            margin: 0;
+            padding: 40px 0;
+            color: #333;
+        }
+
+        .wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #f0b9d3;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* --- DISEÑO DE SCRAPBOOK (REVISTA) --- */
+        .scrapbook-layout {
+            padding: 40px;
+            position: relative;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        .scrap-header {
+            margin-bottom: 35px;
+            border-bottom: 2px dashed #ff85a2;
+            padding-bottom: 20px;
+        }
+
+        .scrap-title {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.8em;
+            letter-spacing: -2px;
+            color: #111;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .scrap-subtitle {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            color: #ff85a2;
+            font-size: 1.6em;
+            margin: 10px 0;
+        }
+
+        .scrap-author {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #8fb95b;
+            font-weight: bold;
+        }
+
+        .scrap-top-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .scrap-image-wrapper {
+            position: relative;
+            text-align: center;
+        }
+
+        .scrap-image-wrapper img {
+            max-width: 100%;
+            filter: drop-shadow(8px 8px 0px rgba(255, 133, 162, 0.15));
+            transform: rotate(2deg);
+        }
+
+        .scrap-tape {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-5deg);
+            width: 100px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        .scrap-pink-box {
+            background-color: #ffe6ee;
+            padding: 25px;
+            margin: 40px 0;
+            transform: rotate(-0.5deg);
+            border: 1px solid #f0b9d3;
+            box-shadow: 6px 6px 0px #f0b9d3;
+            font-family: 'Georgia', serif;
+        }
+
+        .scrap-bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            font-size: 0.95em;
+            text-align: justify;
+        }
+
+        .scrap-highlight {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4fce8;
+            padding: 15px;
+            border-left: 4px solid #8fb95b;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            text-decoration: none;
+            color: #c94f7c;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #aaa;
+            border-top: 1px dashed #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <main class="scrapbook-layout">
+            
+            <header class="scrap-header">
+                <h1 class="scrap-title">Manifiesto:</h1>
+                <h2 class="scrap-subtitle">Repensar la computación desde lo situado.</h2>
+                <div class="scrap-author">Por Sofía Matti | Venus Wiki</div>
+            </header>
+
+            <section class="scrap-top-grid">
+                <div class="scrap-text">
+                    <p>Como estudiante ya por casi 4 años de la licenciatura en ciencias de la computación, siempre he escuchado que la computación es descrita como un área puramente lógica y objetiva; no es que sea una descripción equivocada, es cierto que las bases de la computación formal están dadas desde la lógica y las matemáticas pero este conocimiento fue y es producido por personas, seres vivos pensantes situados en un contexto social e histórico específico.</p>
+                    <p>Sobre todo cuando hablamos de ciencia, los contextos de sus creadores han sido históricamente blancos y masculinos. Entonces, ¿en qué momento se considera a los demás grupos sociales dentro de la perspectiva científica?</p>
+                </div>
+                
+                <div class="scrap-image-wrapper">
+                    <div class="scrap-tape"></div>
+                    <img src="imagenes/chica-recorte.png" alt="Sofia Matti - Recorte">
+                </div>
+            </section>
+
+            <div class="scrap-pink-box">
+                <p>Desde que soy adolescente he mantenido una postura muy marcada respecto al feminismo. Al entrar a la licenciatura me topé con pared. Obviamente no podía esperar perspectiva de género en una carrera en donde aproximadamente el 98% de los estudiantes eran hombres.</p>
+                <p>Al avanzar en los semestres fui conociendo a más personas y puedo decir que la mayoría no suele incluir una postura política en la toma de decisiones. <strong>Entonces, asumir la computación como neutral es tomar la postura de decidir no cuestionarse.</strong></p>
+            </div>
+
+            <section class="scrap-bottom-grid">
+                <div class="left-col">
+                    <p>Por un tiempo abandoné un poco mis ideales para centrarme en sobrevivir en un espacio que no sentía propio ni cómodo. No creo que esta sea una experiencia que deba ser normal. Por eso, desde este espacio quiero plantear la idea de que la computación debe empezar a ser propia de todos y no solo de unos cuantos.</p>
+                </div>
+                <div class="right-col">
+                    <p>Al aprender a programar también se aprende una forma muy particular de percibir nuestro entorno: clasificar y ordenar para optimizar. Y aunque suene absurdo, esto viene de un sistema que necesita oprimir para funcionar.</p>
+                    
+                    <div class="scrap-highlight">
+                        La computación no debe ser vista como un arma para los privilegiados, sino como un área con potencial para el desarrollo social.
+                    </div>
+                </div>
+            </section>
+
+            <p style="margin-top: 30px; font-weight: bold; color: #e75480; text-align: center; font-style: italic;">
+                Repensar la computación implica incomodarla y cuestionarla para que pueda ser reconstruida.
+            </p>
+
+            <a href="index.html" class="back-link">« Volver al inicio</a>
+        </main>
+
+        <footer>
+            hecho con curiosidad y cariño desde Hermosillo ✿
+        </footer>
+    </div>
+
+</body>
+</html>
