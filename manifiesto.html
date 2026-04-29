@@ -121,15 +121,24 @@
             hyphens: auto; /* Opcional: ayuda a cortar palabras largas con guiones para que no queden huecos feos */
         }
 
+/* --- REVISIÓN DEL CUADRITO VERDE (DESTACADO) --- */
         .scrap-highlight {
             font-family: 'Courier New', Courier, monospace;
             background-color: #f4fce8;
-            padding: 15px;
-            border-left: 4px solid #8fb95b;                /* Aquí están los cambios para centrar el cuadro: */
-            width: 80%; 
-            margin: 20px auto; 
+            padding: 20px; /* Aumenté el espacio interno para que se vea más equilibrado */
+            border-left: 4px solid #8fb95b;
+            
+            /* LO IMPORTANTE PARA CENTRAR Y ENSANCHAR */
+            width: 90%;          /* Lo hacemos mucho más ancho (90% del contenedor) */
+            margin: 30px auto;   /* El secreto: margin top/bottom de 30px, y 'auto' a los lados lo centra */
+            
+            /* Detalles extra de estética 'scrapbook' */
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.05); /* Una pequeña sombra */
+            transform: rotate(0.5deg); /* Una rotación sutilísima */
+            
             font-weight: bold;
-            text-align: justify; /* Opcional: Centra las letras adentro del cuadro */
+            text-align: justify; /* Centramos el texto dentro del recuadro ancho */
+            line-height: 1.5;   /* Mejoramos la lectura */
         }
 
         .back-link {
