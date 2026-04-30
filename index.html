@@ -6,164 +6,161 @@
 
     <style>
         /* Tipografías clásicas de los 2000s: Verdana, Tahoma o Arial */
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-image: url("imagenes/background.gif"); /* Puedes mantener tu fondo de estrellitas */
+            background-color: #ffdce8; /* Un fondo rosa por si la imagen no carga */
+            background-attachment: fixed;
+            color: #5a5a5a;
+            margin: 0;
+            padding: 20px 0;
+            font-size: 13px; /* Las letras eran un poco más pequeñas en esa época */
+        }
 
-        @media screen and (max-width: 768px) {
-            body {
-                font-family: 'Verdana', sans-serif;
-                background-image: url("imagenes/background.gif"); /* Puedes mantener tu fondo de estrellitas */
-                background-color: #ffdce8; /* Un fondo rosa por si la imagen no carga */
-                background-attachment: fixed;
-                color: #5a5a5a;
-                margin: 0;
-                padding: 20px 0;
-                font-size: 13px; /* Las letras eran un poco más pequeñas en esa época */
-            }
+        /* El contenedor principal que simula la "página" de papel */
+        .wrapper {
+            width: 850px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #f0b9d3;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
 
-            /* El contenedor principal que simula la "página" de papel */
-            .wrapper {
-                width: 850px;
-                margin: 0 auto;
-                background: white;
-                border: 1px solid #f0b9d3;
-                box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-            }
+        /* El gran Banner superior */
+        header {
+            background-image: url("imagenes/maomao.gif");; /* Verde similar a la foto, cámbialo por una imagen si tienes */
+            /* background-image: url('tu-imagen-de-banner.jpg'); */
+            background-size: cover;
+            background-position: center;
+            height: 180px;
+            padding: 20px 30px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sombra para que el texto resalte */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Manda el texto hacia abajo */
+        }
 
-            /* El gran Banner superior */
-            header {
-                background-image: url("imagenes/maomao.gif");; /* Verde similar a la foto, cámbialo por una imagen si tienes */
-                /* background-image: url('tu-imagen-de-banner.jpg'); */
-                background-size: cover;
-                background-position: center;
-                height: 180px;
-                padding: 20px 30px;
-                color: white;
-                text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sombra para que el texto resalte */
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end; /* Manda el texto hacia abajo */
-            }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-family: 'Georgia', serif; /* Mantenemos tu fuente para el título */
+        }
 
-            header h1 {
-                margin: 0;
-                font-size: 2.2em;
-                font-family: 'Georgia', serif; /* Mantenemos tu fuente para el título */
-            }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.1em;
+        }
 
-            header p {
-                margin: 5px 0 0 0;
-                font-size: 1.1em;
-            }
+        /* Barra de navegación con bordes punteados rosas */
+        nav {
+            background: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-top: 2px dotted #ff85a2;
+            border-bottom: 2px dotted #ff85a2;
+            margin: 5px 20px;
+        }
 
-            /* Barra de navegación con bordes punteados rosas */
-            nav {
-                background: #fff;
-                padding: 10px 0;
-                text-align: center;
-                border-top: 2px dotted #ff85a2;
-                border-bottom: 2px dotted #ff85a2;
-                margin: 5px 20px;
-            }
+        nav a {
+            color: #c94f7c;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
-            nav a {
-                color: #c94f7c;
-                text-decoration: none;
-                margin: 0 15px;
-                font-weight: bold;
-            }
+        nav a:hover {
+            color: #ff85a2;
+            text-decoration: underline;
+        }
 
-            nav a:hover {
-                color: #ff85a2;
-                text-decoration: underline;
-            }
+        /* Estructura de dos columnas usando Flexbox */
+        .layout {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
 
-            /* Estructura de dos columnas usando Flexbox */
-            .layout {
-                display: flex;
-                padding: 20px;
-                gap: 20px;
-            }
+        /* Columna Izquierda (Sidebar) */
+        .sidebar {
+            width: 220px;
+            flex-shrink: 0;
+        }
 
-            /* Columna Izquierda (Sidebar) */
-            .sidebar {
-                width: 220px;
-                flex-shrink: 0;
-            }
+        .perfil-caja {
+            border: 1px solid #e1e1e1;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            background: #fdfdfd;
+        }
 
-            .perfil-caja {
-                border: 1px solid #e1e1e1;
-                padding: 10px;
-                text-align: center;
-                margin-bottom: 20px;
-                background: #fdfdfd;
-            }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Si quieres que sea cuadrado, quita esta línea */
+            border: 3px solid #e2eff3;
+            margin-bottom: 10px;
+        }
 
-            .avatar {
-                width: 120px;
-                height: 120px;
-                border-radius: 50%; /* Si quieres que sea cuadrado, quita esta línea */
-                border: 3px solid #e2eff3;
-                margin-bottom: 10px;
-            }
+        .perfil-datos p {
+            margin: 5px 0;
+            text-align: left;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 5px;
+        }
 
-            .perfil-datos p {
-                margin: 5px 0;
-                text-align: left;
-                border-bottom: 1px dashed #eee;
-                padding-bottom: 5px;
-            }
+        .widget-titulo {
+            color: #e75480;
+            font-weight: bold;
+            border-bottom: 2px solid #e75480;
+            margin-bottom: 10px;
+            padding-bottom: 3px;
+        }
 
-            .widget-titulo {
-                color: #e75480;
-                font-weight: bold;
-                border-bottom: 2px solid #e75480;
-                margin-bottom: 10px;
-                padding-bottom: 3px;
-            }
+        /* Columna Derecha (Contenido principal) */
+        .content {
+            flex-grow: 1;
+            border-left: 1px dashed #ff85a2;
+            padding-left: 20px;
+        }
 
-            /* Columna Derecha (Contenido principal) */
-            .content {
-                flex-grow: 1;
-                border-left: 1px dashed #ff85a2;
-                padding-left: 20px;
-            }
+        .post {
+            margin-bottom: 40px;
+        }
 
-            .post {
-                margin-bottom: 40px;
-            }
+        .post-titulo {
+            color: #8fb95b; /* Verde del título del post como en la imagen */
+            font-size: 1.3em;
+            margin: 0 0 5px 0;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 5px;
+        }
 
-            .post-titulo {
-                color: #8fb95b; /* Verde del título del post como en la imagen */
-                font-size: 1.3em;
-                margin: 0 0 5px 0;
-                border-bottom: 1px dotted #ccc;
-                padding-bottom: 5px;
-            }
+        .post-titulo span {
+            color: #ff85a2; /* Para el iconito o flor */
+        }
 
-            .post-titulo span {
-                color: #ff85a2; /* Para el iconito o flor */
-            }
+        .post-fecha {
+            color: #999;
+            font-size: 0.85em;
+            text-align: right;
+            margin-top: -25px;
+            margin-bottom: 15px;
+        }
 
-            .post-fecha {
-                color: #999;
-                font-size: 0.85em;
-                text-align: right;
-                margin-top: -25px;
-                margin-bottom: 15px;
-            }
+        .post-cuerpo {
+            line-height: 1.6;
+            text-align: justify;
+        }
 
-            .post-cuerpo {
-                line-height: 1.6;
-                text-align: justify;
-            }
-
-            footer {
-                text-align: center;
-                padding: 20px;
-                color: #a38a92;
-                border-top: 1px dashed #ff85a2;
-                margin: 0 20px;
-                font-size: 0.9em;
-            }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #a38a92;
+            border-top: 1px dashed #ff85a2;
+            margin: 0 20px;
+            font-size: 0.9em;
         }
 
     </style>
